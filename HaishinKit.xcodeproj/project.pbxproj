@@ -139,6 +139,9 @@
 		2EC97B7427880FF400D8BE32 /* MTHKSwiftUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC97B7027880FF400D8BE32 /* MTHKSwiftUiView.swift */; };
 		BC0394562AA8A384006EDE38 /* Logboard.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC34DFD125EBB12C005F975A /* Logboard.xcframework */; };
 		BC03945F2AA8AFF5006EDE38 /* ExpressibleByIntegerLiteral+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC03945E2AA8AFF5006EDE38 /* ExpressibleByIntegerLiteral+ExtensionTests.swift */; };
+		92279EFF2A5A35AD00C9A285 /* SampleBufferRTMPStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92279EFE2A5A35AD00C9A285 /* SampleBufferRTMPStream.swift */; };
+		92279F002A5A35AD00C9A285 /* SampleBufferRTMPStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92279EFE2A5A35AD00C9A285 /* SampleBufferRTMPStream.swift */; };
+		92279F012A5A35AD00C9A285 /* SampleBufferRTMPStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92279EFE2A5A35AD00C9A285 /* SampleBufferRTMPStream.swift */; };
 		BC0BF4F22985FA9000D72CB4 /* HaishinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2945CBBD1B4BE66000104112 /* HaishinKit.framework */; };
 		BC0BF4F529866FDE00D72CB4 /* IOMixerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0BF4F429866FDE00D72CB4 /* IOMixerTests.swift */; };
 		BC0D236D26331BAB001DDA0C /* DataBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0D236C26331BAB001DDA0C /* DataBuffer.swift */; };
@@ -549,6 +552,7 @@
 		2EC97B6F27880FF400D8BE32 /* Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		2EC97B7027880FF400D8BE32 /* MTHKSwiftUiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTHKSwiftUiView.swift; sourceTree = "<group>"; };
 		BC03945E2AA8AFF5006EDE38 /* ExpressibleByIntegerLiteral+ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExpressibleByIntegerLiteral+ExtensionTests.swift"; sourceTree = "<group>"; };
+		92279EFE2A5A35AD00C9A285 /* SampleBufferRTMPStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBufferRTMPStream.swift; sourceTree = "<group>"; };
 		BC0BF4F429866FDE00D72CB4 /* IOMixerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOMixerTests.swift; sourceTree = "<group>"; };
 		BC0D236C26331BAB001DDA0C /* DataBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBuffer.swift; sourceTree = "<group>"; };
 		BC11023D2917C35B00D48035 /* CVPixelBufferPool+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBufferPool+Extension.swift"; sourceTree = "<group>"; };
@@ -1085,6 +1089,7 @@
 				29B876A91CD70B2800FC07DA /* RTMPSocket.swift */,
 				29DF20652312A436004057C3 /* RTMPSocketCompatible.swift */,
 				29B876AA1CD70B2800FC07DA /* RTMPStream.swift */,
+				92279EFE2A5A35AD00C9A285 /* SampleBufferRTMPStream.swift */,
 				BC558267240BB40E00011AC0 /* RTMPStreamInfo.swift */,
 				294852551D84BFAD002DE492 /* RTMPTSocket.swift */,
 			);
@@ -1780,6 +1785,7 @@
 				29B876791CD70ACE00FC07DA /* HTTPStream.swift in Sources */,
 				BC1DC50A2A039B4400E928ED /* HEVCDecoderConfigurationRecord.swift in Sources */,
 				BC6FC91E29609A6800A746EE /* ShapeFactory.swift in Sources */,
+				92279EFF2A5A35AD00C9A285 /* SampleBufferRTMPStream.swift in Sources */,
 				BC32E88829C9971100051507 /* InstanceHolder.swift in Sources */,
 				BC7C56B7299E579F00C41A9B /* AudioCodecSettings.swift in Sources */,
 				29B876AC1CD70B2800FC07DA /* AMF3Serializer.swift in Sources */,
