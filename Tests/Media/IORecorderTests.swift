@@ -18,11 +18,11 @@ final class IORecorderTests: XCTestCase, IORecorderDelegate {
         sleep(1)
         var presentationTimeStamp: CMTime = .zero
         for _ in 0...100 {
-            guard let sampleBuffer = CMAudioSampleBufferTestUtil.makeSilence(44100, numSamples: 1024, channels: 2, presentaionTimeStamp: presentationTimeStamp) else {
+            guard let sampleBuffer = CMAudioSampleBufferFactory.makeSilence(44100, numSamples: 1024, channels: 2, presentaionTimeStamp: presentationTimeStamp) else {
                 return
             }
             presentationTimeStamp = CMTimeAdd(presentationTimeStamp, sampleBuffer.duration)
-            recorder.appendSampleBuffer(sampleBuffer)
+            recorder.append(sampleBuffer)
         }
         recorder.stopRunning()
         sleep(1)
@@ -40,17 +40,17 @@ final class IORecorderTests: XCTestCase, IORecorderDelegate {
         sleep(1)
         var presentationTimeStamp: CMTime = .zero
         for _ in 0...100 {
-            guard let sampleBuffer = CMAudioSampleBufferTestUtil.makeSilence(44100, numSamples: 1024, channels: 4, presentaionTimeStamp: presentationTimeStamp) else {
+            guard let sampleBuffer = CMAudioSampleBufferFactory.makeSilence(44100, numSamples: 1024, channels: 4, presentaionTimeStamp: presentationTimeStamp) else {
                 return
             }
             presentationTimeStamp = CMTimeAdd(presentationTimeStamp, sampleBuffer.duration)
-            recorder.appendSampleBuffer(sampleBuffer)
+            recorder.append(sampleBuffer)
         }
         recorder.stopRunning()
         sleep(1)
     }
 
-    func recorder(_ recorder: HaishinKit.IORecorder, errorOccured error: HaishinKit.IORecorder.Error) {
+    func recorder(_ recorder: HaishinKit.IORecorder, errorOccured error: IORecorder.Error) {
         // print("recorder:errorOccured", error)
     }
 

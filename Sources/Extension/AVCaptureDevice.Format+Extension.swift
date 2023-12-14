@@ -16,7 +16,8 @@ extension AVCaptureDevice.Format {
 }
 #endif
 
-#if os(iOS) || os(macOS)
+#if os(iOS) || os(tvOS) || os(macOS)
+@available(tvOS 17.0, *)
 extension AVCaptureDevice.Format {
     func isFrameRateSupported(_ frameRate: Float64) -> Bool {
         var durations: [CMTime] = []
