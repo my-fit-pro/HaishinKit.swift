@@ -45,6 +45,9 @@ public class MTHKView: MTKView {
         }
     }
 
+    /// Specifies the preview is mirror or not. Default value is `false`
+    public var isMirrored: Bool = false
+
     private var displayImage: CIImage?
     private lazy var commandQueue: (any MTLCommandQueue)? = {
         return device?.makeCommandQueue()
@@ -136,6 +139,14 @@ public class MTHKView: MTKView {
         }
 
         var scaledImage = displayImage
+
+        if isMirrored {
+            let mirror = CGAffineTransform(scaleX: -1, y: 1)
+                .translatedBy(x: -scaledImage.extent.width, y: 0)
+            scaledImage = scaledImage.transformed(by: mirror)
+        }
+
+        scaledImage = scaledImage
             .transformed(by: CGAffineTransform(translationX: translationX, y: translationY))
             .transformed(by: CGAffineTransform(scaleX: scaleX, y: scaleY))
 
