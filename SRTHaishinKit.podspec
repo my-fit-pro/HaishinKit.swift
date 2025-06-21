@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "SRTHaishinKit"
-  s.version       = "1.9.8"
+  s.version       = "1.9.9"
   s.summary       = "Camera and Microphone streaming library via SRT for iOS, macOS, tvOS and visionOS."
   s.swift_version = "5.10"
 
